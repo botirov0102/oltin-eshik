@@ -1,1 +1,554 @@
-<!DOCTYPE html> <html lang="uz"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>OLTIN ESHIKLAR</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; } body { min-height: 100vh; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.82)), url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=90") center/cover fixed; display: flex; justify-content: center; align-items: center; color: white; padding: 25px; } .container { width: 100%; max-width: 520px; text-align: center; } .logo { width: 105px; height: 105px; margin: 0 auto 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: linear-gradient(145deg, #fff1a8, #d4a72c, #8b6508); border: 3px solid #f7d774; box-shadow: 0 0 25px rgba(221, 177, 48, .5), inset 0 0 15px rgba(255,255,255,.4); font-size: 48px; } h1 { font-size: 34px; letter-spacing: 4px; font-weight: 800; background: linear-gradient( 90deg, #fff3a6, #d7a928, #fff0a0 ); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px; } .subtitle { color: #ddd; font-size: 15px; margin-bottom: 30px; } .links { display: flex; flex-direction: column; gap: 14px; } .link { text-decoration: none; color: white; display: flex; align-items: center; padding: 17px 20px; border-radius: 15px; background: rgba(255,255,255,.09); border: 1px solid rgba(255,215,100,.28); backdrop-filter: blur(12px); transition: .25s ease; box-shadow: 0 8px 25px rgba(0,0,0,.25); } .link:hover { transform: translateY(-3px) scale(1.01); background: rgba(218,170,42,.18); border-color: #e5bd4b; box-shadow: 0 10px 30px rgba(218,170,42,.22); } .icon { width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: linear-gradient( 145deg, #f5d36b, #a87812 ); color: #111; font-size: 22px; flex-shrink: 0; } .text { flex: 1; text-align: left; margin-left: 15px; } .text strong { display: block; font-size: 16px; margin-bottom: 3px; } .text span { color: #bbb; font-size: 13px; } .arrow { color: #e4bd55; font-size: 22px; } footer { margin-top: 28px; color: #888; font-size: 12px; } @media (max-width: 480px) { body { padding: 18px; } h1 { font-size: 28px; letter-spacing: 3px; } .logo { width: 90px; height: 90px; font-size: 40px; } .link { padding: 15px; } } </style> </head> <body> <div class="container"> <div class="logo"> 🚪 </div> <h1>OLTIN ESHIKLAR</h1> <p class="subtitle"> Sifatli va zamonaviy eshiklar </p> <div class="links"> <!-- TELEGRAM --> <a class="link" href="https://t.me/Mahmudjon_ustoo" target="_blank"> <div class="icon">✈️</div> <div class="text"> <strong>Telegram</strong> <span>@Mahmudjon_ustoo</span> </div> <div class="arrow">›</div> </a> <!-- TELEGRAM KANAL --> <a class="link" href="https://t.me/Oltin_eshiklar" target="_blank"> <div class="icon">📢</div> <div class="text"> <strong>Telegram kanal</strong> <span>Oltin Eshiklar</span> </div> <div class="arrow">›</div> </a> <!-- INSTAGRAM --> <a class="link" href="https://www.instagram.com/oltin_eshiklari?igsh=MTMzdnQ1aWNldjE5bA==" target="_blank"> <div class="icon">📸</div> <div class="text"> <strong>Instagram</strong> <span>@oltin_eshiklari</span> </div> <div class="arrow">›</div> </a> <!-- YOUTUBE --> <a class="link" href="https://www.youtube.com/@Oltin_eshiklari" target="_blank"> <div class="icon">▶️</div> <div class="text"> <strong>YouTube</strong> <span>Oltin Eshiklari</span> </div> <div class="arrow">›</div> </a> <!-- TELEFON --> <a class="link" href="tel:994150434"> <div class="icon">📞</div> <div class="text"> <strong>Telefon</strong> <span>994 150 434</span> </div> <div class="arrow">›</div> </a> <!-- MANZIL --> <a class="link" href="https://goo.gl/maps/o2pKkWiA3kuohxTD9" target="_blank"> <div class="icon">📍</div> <div class="text"> <strong>Bizning manzil</strong> <span>Google Maps orqali ko‘rish</span> </div> <div class="arrow">›</div> </a> </div> <footer> © 2026 OLTIN ESHIKLAR </footer> </div> </body> </html> 
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0b0b">
+
+<title>OLTIN ESHIKLAR — Karimov Mahmudjon</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 25px 15px 35px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.76),
+            rgba(0,0,0,.88)
+        ),
+        url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=90")
+        center/cover fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 560px;
+    margin: auto;
+    text-align: center;
+}
+
+/* PROFIL RASMI */
+.profile {
+    width: 150px;
+    height: 150px;
+    margin: 5px auto 20px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 4px solid #e9bd45;
+
+    box-shadow:
+        0 0 0 5px rgba(232,188,65,.12),
+        0 0 35px rgba(232,188,65,.55);
+
+    background: white;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SARLAVHA */
+h1 {
+    font-size: clamp(29px, 8vw, 42px);
+    line-height: 1.05;
+
+    letter-spacing: 4px;
+    font-weight: 900;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff2a5,
+            #d7a72c,
+            #fff1a0,
+            #b77d10
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    margin-bottom: 10px;
+}
+
+/* ISM */
+.name {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+/* LAVOZIM */
+.role {
+    color: #e8e8e8;
+    font-size: 14px;
+    line-height: 1.55;
+
+    margin: 0 auto 18px;
+    max-width: 470px;
+}
+
+/* OLTIN CHIZIQ */
+.divider {
+    width: 70px;
+    height: 3px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #a87812,
+            #ffe37c,
+            #a87812
+        );
+
+    box-shadow:
+        0 0 14px rgba(255,211,83,.55);
+}
+
+/* BREND HAQIDA */
+.about {
+    text-align: left;
+
+    padding: 18px 20px;
+    margin-bottom: 20px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,.075);
+
+    border:
+        1px solid rgba(255,215,100,.28);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 28px rgba(0,0,0,.28);
+}
+
+.about-title {
+    color: #f1c84e;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+.about p {
+    color: #ddd;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* LINKLAR */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 14px 17px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,.075);
+
+    border:
+        1px solid rgba(255,215,100,.30);
+
+    backdrop-filter: blur(12px);
+
+    transition: .25s ease;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.25);
+}
+
+.link:hover {
+    transform: translateY(-3px);
+
+    background:
+        rgba(218,170,42,.16);
+
+    border-color: #e5bd4b;
+
+    box-shadow:
+        0 12px 32px rgba(218,170,42,.25);
+}
+
+/* IKONKA */
+.icon {
+    width: 48px;
+    height: 48px;
+
+    flex: 0 0 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffe78c,
+            #c08a16
+        );
+
+    color: #111;
+
+    font-size: 22px;
+
+    box-shadow:
+        inset 0 0 10px rgba(255,255,255,.25);
+}
+
+/* MATN */
+.text {
+    flex: 1;
+
+    text-align: left;
+
+    margin-left: 14px;
+}
+
+.text strong {
+    display: block;
+
+    font-size: 16px;
+
+    margin-bottom: 4px;
+}
+
+.text span {
+    color: #bbb;
+    font-size: 13px;
+}
+
+/* O'NG TOMON */
+.arrow {
+    color: #e8bf4c;
+
+    font-size: 27px;
+
+    padding-left: 8px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 28px;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+/* TELEFON UCHUN */
+@media (max-width: 480px) {
+
+    body {
+        padding: 18px 12px 30px;
+    }
+
+    .profile {
+        width: 125px;
+        height: 125px;
+    }
+
+    h1 {
+        letter-spacing: 2.5px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .about {
+        padding: 16px;
+    }
+
+    .link {
+        padding: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- PROFIL RASMI -->
+    <div class="profile">
+        <img
+            src="1000026373.jpg"
+            alt="Karimov Mahmudjon"
+        >
+    </div>
+
+
+    <!-- SARLAVHA -->
+    <h1>OLTIN ESHIKLAR</h1>
+
+
+    <!-- ISM -->
+    <div class="name">
+        Karimov Mahmudjon
+    </div>
+
+
+    <!-- TAJRIBA -->
+    <div class="role">
+        Oltin eshik brendi asoschisi va
+        15 yillik tajribali eshik ustasi.
+    </div>
+
+
+    <div class="divider"></div>
+
+
+    <!-- BREND HAQIDA -->
+    <section class="about">
+
+        <div class="about-title">
+            OLTIN ESHIK HAQIDA
+        </div>
+
+        <p>
+            “Oltin Eshik” — 15 yillik tajriba,
+            puxta mehnat va mijoz ishonchi
+            asosida yaratilgan brend.
+        </p>
+
+    </section>
+
+
+    <!-- LINKLAR -->
+    <div class="links">
+
+
+        <!-- TELEGRAM -->
+        <a
+            class="link"
+            href="https://t.me/Mahmudjon_ustoo"
+            target="_blank"
+            rel="noopener"
+        >
+
+            <div class="icon">
+                ✈️
+            </div>
+
+            <div class="text">
+
+                <strong>
+                    Telegram
+                </strong>
+
+                <span>
+                    @Mahmudjon_ustoo
+                </span>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </a>
+
+
+        <!-- TELEGRAM KANAL -->
+        <a
+            class="link"
+            href="https://t.me/Oltin_eshiklar"
+            target="_blank"
+            rel="noopener"
+        >
+
+            <div class="icon">
+                📢
+            </div>
+
+            <div class="text">
+
+                <strong>
+                    Telegram kanal
+                </strong>
+
+                <span>
+                    Oltin Eshiklar
+                </span>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </a>
+
+
+        <!-- INSTAGRAM -->
+        <a
+            class="link"
+            href="https://www.instagram.com/oltin_eshiklari?igsh=MTMzdnQ1aWNldjE5bA=="
+            target="_blank"
+            rel="noopener"
+        >
+
+            <div class="icon">
+                📸
+            </div>
+
+            <div class="text">
+
+                <strong>
+                    Instagram
+                </strong>
+
+                <span>
+                    @oltin_eshiklari
+                </span>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </a>
+
+
+        <!-- YOUTUBE -->
+        <a
+            class="link"
+            href="https://www.youtube.com/@Oltin_eshiklari"
+            target="_blank"
+            rel="noopener"
+        >
+
+            <div class="icon">
+                ▶️
+            </div>
+
+            <div class="text">
+
+                <strong>
+                    YouTube
+                </strong>
+
+                <span>
+                    Oltin Eshiklari
+                </span>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </a>
+
+
+        <!-- TELEFON -->
+        <a
+            class="link"
+            href="tel:994150434"
+        >
+
+            <div class="icon">
+                📞
+            </div>
+
+            <div class="text">
+
+                <strong>
+                    Telefon
+                </strong>
+
+                <span>
+                    994 150 434
+                </span>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </a>
+
+
+        <!-- MANZIL -->
+        <a
+            class="link"
+            href="https://goo.gl/maps/o2pKkWiA3kuohxTD9"
+            target="_blank"
+            rel="noopener"
+        >
+
+            <div class="icon">
+                📍
+            </div>
+
+            <div class="text">
+
+                <strong>
+                    Bizning manzil
+                </strong>
+
+                <span>
+                    Google Maps orqali ko‘rish
+                </span>
+
+            </div>
+
+            <div class="arrow">
+                ›
+            </div>
+
+        </a>
+
+    </div>
+
+
+    <footer>
+        © 2026 OLTIN ESHIKLAR
+    </footer>
+
+</div>
+
+</body>
+                  </html>
